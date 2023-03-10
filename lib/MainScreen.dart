@@ -64,7 +64,7 @@ class _MainScreenState extends State<MainScreen> {
             onTap: () {
               setState(() {
                 double kggvalue = double.parse(kgvalue.text);
-                poundvalue = kggvalue * 2.2;
+                poundvalue = double.parse((kggvalue * 2.2).toStringAsFixed(2));
               });
             },
             child: Container(
